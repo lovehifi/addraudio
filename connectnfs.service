@@ -4,6 +4,7 @@ After=network.target logitechmediaserver-git.service
 
 [Service]
 Type=simple
+ExecStartPre=sleep 15
 ExecStart=/opt/getip.sh
 Restart=on-failure
 RestartSec=30
