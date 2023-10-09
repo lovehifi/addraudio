@@ -1,0 +1,11 @@
+[Unit]
+Description=Connect NFS
+After=local-fs.target remote-fs.target nss-lookup.target network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/getip.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
