@@ -15,5 +15,7 @@ systemctl enable connectnfs.service
 systemctl restart connectnfs.service
 
 echo "Finished, Change your web in file /boot/ip.ini and reboot"
+
+echo "Check your web ip in the file /etc/fstab"
 #systemctl status connectnfs.service
 
