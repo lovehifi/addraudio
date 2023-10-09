@@ -19,3 +19,8 @@
 > pacman -U htop-3.2.2-1-aarch64.pkg.tar.xz
 >
 -----------------
+## NFS IP in fstab
+>
+> wget -O - https://raw.githubusercontent.com/lovehifi/addraudio/main/mountnfs | sh
+>
+-----------------
