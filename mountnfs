@@ -17,7 +17,7 @@ cp -f /tmp/getip.timer /etc/systemd/system/
 systemctl daemon-reload
 systemctl enable connectnfs.service
 systemctl enable --now getip.timer
-systemctl restart getip.timer
+
 systemctl restart connectnfs.service
 
 echo "Finished, Change your web in file /boot/ip.ini"
