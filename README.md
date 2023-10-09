@@ -1,7 +1,7 @@
 # Tips for using rAudio and LMS
 ## Add NAS to rAudio**
 ![Screenshot](001.jpg)
-![Screenshot](000.jpg)
+![Screenshot](002.jpg)
 ![Screenshot](003.jpg)
 >
 --------
