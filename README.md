@@ -1,5 +1,6 @@
 # Add to rAudio
 ## Add NAS to rAudio**
+#### Listen to music from your NAS with LMS on rAudio.
 >
 ## Install htop 64 bit
 >
