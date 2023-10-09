@@ -11,7 +11,7 @@ chmod -R 755 /tmp/connectnfs.service
 cp -f /tmp/connectnfs.service /etc/systemd/system/
 
 systemctl daemon-reload
-systemctl enable connectnfs.service
+#systemctl enable connectnfs.service
 systemctl restart connectnfs.service
 
 echo "Finished, Change your web in file /boot/ip.ini"
