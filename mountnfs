@@ -3,12 +3,16 @@ echo "hostname.ddns.net" | sudo tee /boot/ip.ini
 cd /tmp
 wget https://raw.githubusercontent.com/lovehifi/addraudio/main/getip.sh
 wget https://raw.githubusercontent.com/lovehifi/addraudio/main/connectnfs.service
+wget https://raw.githubusercontent.com/lovehifi/addraudio/main/getip.timer
 
 chmod -R 755 /tmp/getip.sh
 cp -f /tmp/getip.sh /opt/
 
 chmod -R 755 /tmp/connectnfs.service
 cp -f /tmp/connectnfs.service /etc/systemd/system/
+
+chmod -R 755 /tmp/getip.timer
+cp -f /tmp/getip.timer /etc/systemd/system/
 
 systemctl daemon-reload
 #systemctl enable connectnfs.service
