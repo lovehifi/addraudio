@@ -6,7 +6,7 @@
 >
 --------
 >
-#### Listen to music from your NAS with LMS on rAudio.
+#### Listen to music from your NAS (or PC) with LMS on rAudio.
 ![Screenshot](004.jpg)
 ![Screenshot](005.jpg)
 >
