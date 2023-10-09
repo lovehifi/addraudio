@@ -4,7 +4,7 @@
 if ! grep -q "nfs" /etc/fstab; then
     echo "Adding default nfs line to /etc/fstab"
     sed -i '$!N;/\n$/!P;D' /etc/fstab # Remove trailing empty lines
-    echo -e "\n11.22.33.44:/DSD  /mnt/MPD/NAS/DSD  nfs   defaults,noauto,bg,soft,timeo=5  0  0\n" >> /etc/fstab
+    echo -e "\n11.22.33.44:/DSD    /mnt/MPD/NAS/DSD  nfs   defaults,noauto,bg,soft,timeo=5  0  0\n" >> /etc/fstab
 else
     echo "NFS OK"
 fi
