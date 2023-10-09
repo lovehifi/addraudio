@@ -10,7 +10,7 @@ else
 fi
 
 ip_address=$(cat /boot/ip.ini)
-ping_result=$(ping -c 1 -W 10 "$ip_address")
+ping_result=$(ping -c 1 -W 3 "$ip_address")
 
 if [[ $? -eq 0 ]]; then
     dynamic_ip=$(echo "$ping_result" | awk -F'[()]' '/PING/{print $2}')
