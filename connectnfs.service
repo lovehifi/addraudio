@@ -2,9 +2,9 @@
 Description=Connect NFS
 After=network.target logitechmediaserver-git.service
 
-Type=simple
-ExecStartPre=/bin/sleep 10
+[Service]
 ExecStart=/opt/getip.sh
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
