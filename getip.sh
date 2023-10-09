@@ -9,7 +9,7 @@ else
     echo "NFS OK"
 fi
 
-ip_address=$(cat /boot/ip.ini)
+ip_address=$(cat /opt/ip.ini)
 ping_result=$(ping -c 1 -W 3 "$ip_address")
 
 if [[ $? -eq 0 ]]; then
