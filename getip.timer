@@ -1,0 +1,10 @@
+[Unit]
+Description=Run getip every 30 minutes
+
+[Timer]
+OnBootSec=0min
+OnUnitActiveSec=30min
+Unit=connectnfs.service
+
+[Install]
+WantedBy=timers.target
