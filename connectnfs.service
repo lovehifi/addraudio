@@ -1,6 +1,6 @@
 [Unit]
 Description=Connect NFS
-After=local-fs.target remote-fs.target nss-lookup.target network.target
+After=nss-lookup.target network.target
 
 [Service]
 Type=simple
