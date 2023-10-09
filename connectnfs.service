@@ -1,6 +1,6 @@
 [Unit]
 Description=Connect NFS
-After=nss-lookup.target network.target
+After=network.target logitechmediaserver-git.service
 
 [Service]
 Type=simple
