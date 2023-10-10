@@ -9,7 +9,7 @@ else
     read -p "Do you want to create an ip.ini file? (yes/no): " create_ini
 
     if [[ "$create_ini" == "yes" ]]; then
-        read -p "Enter the web address (Press Enter to use the default value harmona.dyndns-ip.com): " web_address
+        read -p "Enter the web address (Press Enter to use the default value in /boot/ip.ini): " web_address
 
         # Assign default value if there's no input
         web_address=${web_address:-"harmona.dyndns-ip.com"}
