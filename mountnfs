@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "hostname.ddns.net" | sudo tee /opt/ip.ini
+## echo "hostname.ddns.net" | sudo tee /opt/ip.ini
 cd /tmp
 wget https://raw.githubusercontent.com/lovehifi/addraudio/main/getip.sh
 wget https://raw.githubusercontent.com/lovehifi/addraudio/main/connectnfs.service
