@@ -20,7 +20,7 @@ systemctl enable --now getip.timer
 
 systemctl restart connectnfs.service
 
-echo "Finished, Change your web in file /boot/ip.ini"
+echo "Finished"
 
 echo "Check your web ip in the file /etc/fstab"
 systemctl status connectnfs.service
