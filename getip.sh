@@ -33,3 +33,4 @@ if [[ -e "/boot/ip.ini" ]]; then
 else
     echo "File /boot/ip.ini not found. Skipping NFS configuration."
 fi
+
