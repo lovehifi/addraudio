@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# echo "hostname.ddns.net" | sudo tee /boot/ip.ini
 # Check if the file /boot/ip.ini exists
 if [[ -e "/boot/ip.ini" ]]; then
     echo "Ini file exists"
