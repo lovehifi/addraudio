@@ -4,12 +4,12 @@ if [[ -e "/boot/ip.ini" ]]; then
     if ! grep -q "nfs" /etc/fstab; then
         echo "Adding default nfs line to /etc/fstab"
         #sed -i '$!N;/\n$/!P;D' /etc/fstab
-		dirmount"/volume2/DSD"
+		dirmount"volume2/DSD"
 		dirnas="/mnt/MPD/NAS/DSD"			
 		mountpoint="$dirnas"
 		mkdir -p $mountpoint
 		chown mpd:audio "$mountpoint"
-        echo -e "11.22.33.44:$dirmount  $mountpoint  nfs   defaults,noauto,bg,soft,timeo=5  0  0" >> /etc/fstab
+        echo -e "11.22.33.44:/$dirmount  $mountpoint  nfs   defaults,noauto,bg,soft,timeo=5  0  0" >> /etc/fstab
 		
     else
         echo "NFS OK"
