@@ -22,7 +22,6 @@ systemctl restart connectnfs.service
 
 echo "Finished"
 
-echo "Check your web ip in the file /etc/fstab"
 systemctl status connectnfs.service
 
 
