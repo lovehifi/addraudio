@@ -7,7 +7,7 @@ if [[ -e "/boot/ip.ini" ]]; then
 else
     # File /boot/ip.ini does not exist
     echo "File /boot/ip.ini does not exist."
-    read -p "Do you want to create an ip.ini file? (yes/no): " create_ini
+    read -p "Do you want to create an /boot/ip.ini file? (yes/no): " create_ini
 
     if [[ "$create_ini" == "yes" ]]; then
         read -p "Enter the web address (Press Enter to use the default value harmona.dyndns-ip.com): " web_address
