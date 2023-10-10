@@ -1,13 +1,11 @@
 #!/bin/bash
-#!/bin/bash
-
 # Check if the file /boot/ip.ini exists
 if [[ -e "/boot/ip.ini" ]]; then
     echo "Ini file exists"
 else
     # File /boot/ip.ini does not exist
     echo "File /boot/ip.ini does not exist."
-    read -p "Do you want to create an /boot/ip.ini file? (yes/no): " create_ini
+    read -p "Do you want to create an ip.ini file? (yes/no): " create_ini
 
     if [[ "$create_ini" == "yes" ]]; then
         read -p "Enter the web address (Press Enter to use the default value harmona.dyndns-ip.com): " web_address
@@ -32,12 +30,13 @@ if [[ -e "/boot/ip.ini" ]]; then
     if ! grep -q "nfs" /etc/fstab; then
         echo "Adding default nfs line to /etc/fstab"
         #sed -i '$!N;/\n$/!P;D' /etc/fstab
-		dirmount"volume2/DSD"
+		dirmount="volume2/DSD"
 		dirnas="/mnt/MPD/NAS/DSD"			
 		mountpoint="$dirnas"
 		mkdir -p $mountpoint
 		chown mpd:audio "$mountpoint"
         echo -e "11.22.33.44:/$dirmount  $mountpoint  nfs   defaults,noauto,bg,soft,timeo=5  0  0" >> /etc/fstab
+		
 		
     else
         echo "NFS OK"
