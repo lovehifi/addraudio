@@ -2,5 +2,10 @@
 
 cd /tmp
 wget https://raw.githubusercontent.com/lovehifi/addraudio/main/configui.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/addraudio/main/startsq.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/addraudio/main/eq.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/addraudio/main/actionmenu.tar.gz
 tar -xzvf configui.tar.gz --overwrite -C /
-
+tar -xzvf startsq.tar.gz --overwrite -C /
+tar -xzvf eq.tar.gz --overwrite -C /
+tar -xzvf actionmenu.tar.gz --overwrite -C /
