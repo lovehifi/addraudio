@@ -5,3 +5,5 @@ wget https://raw.githubusercontent.com/lovehifi/addraudio/main/configui.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/addraudio/main/actionmenu.tar.gz
 tar -xzvf configui.tar.gz --overwrite -C /
 tar -xzvf actionmenu.tar.gz --overwrite -C /
+
+echo "Install Finished, please reboot"
