@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd /tmp
+wget https://raw.githubusercontent.com/lovehifi/addraudio/main/eqfa12-lms.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/addraudio/main/startsq.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/addraudio/main/eq.tar.gz
+tar -xzvf eqfa12-lms.tar.gz --overwrite -C /
+tar -xzvf startsq.tar.gz --overwrite -C /
+tar -xzvf eq.tar.gz --overwrite -C /
