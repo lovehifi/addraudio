@@ -1,1 +1,6 @@
+#!/bin/bash
+
+cd /tmp
+wget https://raw.githubusercontent.com/lovehifi/addraudio/main/configui.tar.gz
+tar -xzvf configui.tar.gz --overwrite -C /
 
