@@ -24,3 +24,13 @@
 > wget -O - https://raw.githubusercontent.com/lovehifi/addraudio/main/mountnfs | sh
 >
 -----------------
+## Eqfa12 LMS
+>
+> wget -O - https://raw.githubusercontent.com/lovehifi/addraudio/main/eqfa12lms | sh
+>
+-----------------
+## Config GUI LMS
+>
+> wget -O - https://raw.githubusercontent.com/lovehifi/addraudio/main/configgui | sh
+>
+-----------------
