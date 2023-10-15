@@ -1,0 +1,76 @@
+#!/bin/bash
+
+cd /tmp
+wget https://raw.githubusercontent.com/lovehifi/addraudio/main/eqfa12-lms.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/addraudio/main/startsq.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/addraudio/main/eq.tar.gz
+tar -xzvf eqfa12-lms.tar.gz --overwrite -C /
+tar -xzvf startsq.tar.gz --overwrite -C /
+tar -xzvf eq.tar.gz --overwrite -C /
+
+
+input_file="/etc/alsa/conf.d/eqfa12p.conf"
+output_file="/tmp/eqfa12p_modified.conf"
+file="/srv/http/data/mpdconf/output.conf"
+
+cd /tmp
+wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/eqfa12p.conf
+cp -f /tmp/eqfa12p.conf /etc/alsa/conf.d/
+chown http:http /etc/alsa/conf.d/eqfa12p.conf
+cp -f /etc/alsa/conf.d/eqfa12p.conf /etc/alsa/conf.d/eqfa12p.conf.backup
+
+wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/eq12.conf
+cp -f /tmp/eq12.conf /srv/http/data/mpdconf/
+chown http:http /srv/http/data/mpdconf/eq12.conf
+
+wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/caps32.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/ladspa_share32.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/ladspa32_usr.tar.gz
+tar -xzf /tmp/caps.tar.gz --overwrite -C /
+tar -xzf /tmp/ladspa_share.tar.gz --overwrite -C /
+tar -xzf /tmp/ladspa_usr.tar.gz --overwrite -C /
+
+mkdir -p /tmp/eqfa12
+cd /tmp/eqfa12
+wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/eqfa12/eq_params_default.json
+
+sleep 1
+cp -f /tmp/eqfa12/eq_params_default.json /mnt/MPD/SD/
+chown http:http /mnt/MPD/SD/eq_params_default.json
+chown http:http -Rv /srv/http/eqfa12
+
+cd /tmp
+
+# Check if the file exists
+if [ -f "$file" ]; then
+  # Extract the value after "device" and remove "hw:" prefix
+  device=$(awk -F'"' '/device/ {gsub("hw:", "", $2); print $2; exit}' "$file")
+
+  # Print the extracted device
+  echo "Device: $device"
+else
+  echo "File not found: $file"
+fi
+
+# Specify the input file and output file
+
+
+# Check if the input file exists
+if [ -f "$input_file" ]; then
+  # Read the content of the input file, replace plughw:X,Y with the device, and save to the output file
+  sed "s/plughw:[0-9]\+,[0-9]\+/plughw:$device/g" "$input_file" > "$output_file"
+  echo "Replacement completed. Modified configuration saved to $output_file"
+else
+  echo "Input file not found: $input_file"
+fi
+
+
+cp -f /tmp/eqfa12p_modified.conf /etc/alsa/conf.d/eqfa12p.conf
+chown http:http /etc/alsa/conf.d/eqfa12p.conf
+chown http:http /opt/sq/sq.sh
+chown http:http /opt/sq/sq.service
+touch /mnt/MPD/SD/eq_params.json
+
+chown http:http /mnt/MPD/SD/eq_params.json
+
+echo "Install Finished, please reboot"
