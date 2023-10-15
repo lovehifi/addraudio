@@ -23,23 +23,12 @@ wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/eq12.conf
 cp -f /tmp/eq12.conf /srv/http/data/mpdconf/
 chown http:http /srv/http/data/mpdconf/eq12.conf
 
-if [ -d "/opt/sq/squeezelite32" ]; then
-  echo "Install for 64bit"
 wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/caps.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/ladspa_share.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/ladspa_usr.tar.gz
-  tar -xzf /tmp/caps.tar.gz --overwrite -C /
-  tar -xzf /tmp/ladspa_share.tar.gz --overwrite -C /
-  tar -xzf /tmp/ladspa_usr.tar.gz --overwrite -C /
-else
-  echo "Install for 32bit"
-wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/caps32.tar.gz
-wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/ladspa_share32.tar.gz
-wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/ladspa32_usr.tar.gz
-  tar -xzf /tmp/caps32.tar.gz --overwrite -C /
-  tar -xzf /tmp/ladspa_share32.tar.gz --overwrite -C /
-  tar -xzf /tmp/ladspa32_usr.tar.gz --overwrite -C /
-fi
+tar -xzf /tmp/caps.tar.gz --overwrite -C /
+tar -xzf /tmp/ladspa_share.tar.gz --overwrite -C /
+tar -xzf /tmp/ladspa_usr.tar.gz --overwrite -C /
 
 mkdir -p /tmp/eqfa12
 cd /tmp/eqfa12
