@@ -68,7 +68,8 @@ fi
 
 cp -f /tmp/eqfa12p_modified.conf /etc/alsa/conf.d/eqfa12p.conf
 chown http:http /etc/alsa/conf.d/eqfa12p.conf
-
+chown http:http /opt/sq/sq.sh
+chown http:http /opt/sq/sq.service
 touch /mnt/MPD/SD/eq_params.json
 chown http:http /mnt/MPD/SD/eq_params.json
 
