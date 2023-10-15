@@ -32,6 +32,7 @@ wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/ladspa_share32.tar.g
 wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/ladspa32_usr.tar.gz
 
 if [ -d "/opt/sq/squeezelite32" ]; then
+  echo "Install for 32bit"
   tar -xzf /tmp/caps32.tar.gz --overwrite -C /
   tar -xzf /tmp/ladspa_share32.tar.gz --overwrite -C /
   tar -xzf /tmp/ladspa32_usr.tar.gz --overwrite -C /
