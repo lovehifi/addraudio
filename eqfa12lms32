@@ -26,6 +26,7 @@ chown http:http /srv/http/data/mpdconf/eq12.conf
 wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/caps32.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/ladspa_share32.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/ladspa32_usr.tar.gz
+sleep 1
 tar -xzf /tmp/caps32.tar.gz --overwrite -C /
 tar -xzf /tmp/ladspa_share32.tar.gz --overwrite -C /
 tar -xzf /tmp/ladspa32_usr.tar.gz --overwrite -C /
