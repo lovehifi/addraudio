@@ -43,9 +43,6 @@ else
   tar -xzf /tmp/ladspa_usr.tar.gz --overwrite -C /
 fi
 
-
-
-
 mkdir -p /tmp/eqfa12
 cd /tmp/eqfa12
 wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/eqfa12/eq_params_default.json
