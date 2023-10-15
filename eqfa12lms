@@ -26,6 +26,11 @@ chown http:http /srv/http/data/mpdconf/eq12.conf
 wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/caps.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/ladspa_share.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/ladspa_usr.tar.gz
+
+wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/caps32.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/ladspa_share32.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/eqfa12/main/ladspa32_usr.tar.gz
+
 tar -xzf /tmp/caps.tar.gz --overwrite -C /
 tar -xzf /tmp/ladspa_share.tar.gz --overwrite -C /
 tar -xzf /tmp/ladspa_usr.tar.gz --overwrite -C /
@@ -71,6 +76,16 @@ chown http:http /etc/alsa/conf.d/eqfa12p.conf
 chown http:http /opt/sq/sq.sh
 chown http:http /opt/sq/sq.service
 touch /mnt/MPD/SD/eq_params.json
+
+
+if [ -d "/opt/sq/squeezelite32" ]; then
+  tar -xzf /tmp/caps32.tar.gz --overwrite -C /
+  tar -xzf /tmp/ladspa_share32.tar.gz --overwrite -C /
+  tar -xzf /tmp/ladspa32_usr.tar.gz --overwrite -C /
+else
+    echo "Skip for 32bit"
+fi
+
 chown http:http /mnt/MPD/SD/eq_params.json
 
 echo "Install Finished, please reboot"
