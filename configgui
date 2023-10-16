@@ -5,5 +5,6 @@ wget https://raw.githubusercontent.com/lovehifi/addraudio/main/configui.tar.gz
 wget https://raw.githubusercontent.com/lovehifi/addraudio/main/actionmenu.tar.gz
 tar -xzvf configui.tar.gz --overwrite -C /
 tar -xzvf actionmenu.tar.gz --overwrite -C /
-
+chown http:http -Rv /srv/http/config
+chown http:http -Rv /opt/logitechmediaserver-git/prefs/material-skin
 echo "Install Finished, please reboot"
