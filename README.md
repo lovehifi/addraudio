@@ -55,4 +55,4 @@ Here are the plugins that I have activated:
 - YouTube
 ---------------------
 ## #7 Scan the music library in the LMS
-![Screenshot](add-music.jpg)
+![Screenshot](add-music.png)
