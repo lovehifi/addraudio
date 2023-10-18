@@ -39,9 +39,11 @@ https://github.com/lovehifi/eqfa12
 
 > wget -O - https://raw.githubusercontent.com/lovehifi/addraudio/main/configgui | sh
 >
-1./ ![Screenshot](choose-i2s.png)
+Select the Audio I2S device if you are using an I2S DAC for the first time.
 >
-2./ ![Screenshot](config_gui.png)
+1. ![Screenshot](choose-i2s.png)
+>
+2. ![Screenshot](config_gui.png)
 
 >
 -----------------
