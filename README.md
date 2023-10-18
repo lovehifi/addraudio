@@ -29,7 +29,7 @@ In LMS, click the Interface menu, scroll to Home screen items, click the Setting
 > wget -O - https://raw.githubusercontent.com/lovehifi/addraudio/main/mountnfs | sh
 >
 -----------------
-## #4 Eqfa12 LMS
+## #4 Eqfa12 LMS (https://github.com/lovehifi/eqfa12)
 >
 > wget -O - https://raw.githubusercontent.com/lovehifi/addraudio/main/eqfa12lms | sh
 >
