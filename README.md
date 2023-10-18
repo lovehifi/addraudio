@@ -29,7 +29,7 @@
 > wget -O - https://raw.githubusercontent.com/lovehifi/addraudio/main/eqfa12lms | sh
 >
 -----------------
-## Config GUI LMS
+## 5./ Config GUI LMS
 >
 > wget -O - https://raw.githubusercontent.com/lovehifi/addraudio/main/configgui | sh
 >
