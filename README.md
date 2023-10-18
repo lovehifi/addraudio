@@ -41,10 +41,10 @@ https://github.com/lovehifi/eqfa12
 >
 Select the Audio I2S device if you are using an I2S DAC for the first time.
 >
-1. ![Screenshot](choose-i2s.png)
+![Screenshot](choose-i2s.png)
 >
-2. ![Screenshot](config_gui.png)
-
+Next, from the LMS - Config menu, you can easily switch between I2S DAC and USB DAC by dragging the circle. If you have multiple different USB DACs, you can also easily switch between them in the DACs list.
+![Screenshot](config_gui.png)
 >
 -----------------
 ## #6 Plugin LMS
