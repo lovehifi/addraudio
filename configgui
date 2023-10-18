@@ -10,3 +10,4 @@ chown http:http -Rv /opt/logitechmediaserver-git/prefs/material-skin
 
 echo "Install Finished, please reboot"
 
+
