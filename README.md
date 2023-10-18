@@ -36,10 +36,12 @@ https://github.com/lovehifi/eqfa12
 >
 -----------------
 ## #5 Config GUI LMS
->
+
 > wget -O - https://raw.githubusercontent.com/lovehifi/addraudio/main/configgui | sh
 >
-![Screenshot](config_gui.png)
+1./ ![Screenshot](choose-i2s.png)
+>
+2./ ![Screenshot](config_gui.png)
 
 >
 -----------------
