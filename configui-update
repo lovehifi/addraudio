@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd /tmp
+wget https://raw.githubusercontent.com/lovehifi/addraudio/main/configui2.tar.gz
+wget https://raw.githubusercontent.com/lovehifi/addraudio/main/actionmenu.tar.gz
+tar -xzvf configui2.tar.gz --overwrite -C /
+tar -xzvf actionmenu.tar.gz --overwrite -C /
+chown http:http -Rv /srv/http/config
+chown http:http -Rv /opt/logitechmediaserver-git/prefs/material-skin
+echo 'http ALL=(ALL) NOPASSWD: ALL' | sudo tee -a /etc/sudoers
+echo "Install Finished, please reboot"
