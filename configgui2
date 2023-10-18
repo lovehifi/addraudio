@@ -7,5 +7,5 @@ tar -xzvf configgui2.tar.gz --overwrite -C /
 tar -xzvf actionmenu.tar.gz --overwrite -C /
 chown http:http -Rv /srv/http/config
 chown http:http -Rv /opt/logitechmediaserver-git/prefs/material-skin
-
+usermod -a -G audio http
 echo "Install Finished, please reboot"
