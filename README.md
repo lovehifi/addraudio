@@ -54,5 +54,5 @@ Here are the plugins that I have activated:
 - Qobuz
 - YouTube
 ---------------------
-## #7 Scan the music library in the LMS
+## #7 Set up your music library in LMS.
 ![Screenshot](add-music.png)
