@@ -34,6 +34,8 @@ https://github.com/lovehifi/eqfa12
 >
 > wget -O - https://raw.githubusercontent.com/lovehifi/addraudio/main/eqfa12lms | sh
 >
+![Screenshot](Eqfa12LMS.png)
+>
 -----------------
 ### #5 Config GUI LMS
 
