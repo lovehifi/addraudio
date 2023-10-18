@@ -1,5 +1,5 @@
 # Tips for using rAudio and LMS
-## #1 Add NAS to rAudio
+### #1 Add NAS to rAudio
 ![Screenshot](001.jpg)
 ![Screenshot](002a.jpg)
 ![Screenshot](003.jpg)
@@ -17,25 +17,25 @@ In LMS, click the Interface menu, scroll to Home screen items, click the Setting
 >
 -------
 >
-## #2 Install htop 64 bit
+### #2 Install htop 64 bit
 >
 > cd /tmp && wget http://ftp.tku.edu.tw/Linux/ArchLinux-arm/aarch64/extra/htop-3.2.2-1-aarch64.pkg.tar.xz
 >
 > pacman -U htop-3.2.2-1-aarch64.pkg.tar.xz
 >
 -----------------
-## #3 NFS IP in fstab
+### #3 NFS IP in fstab
 >
 > wget -O - https://raw.githubusercontent.com/lovehifi/addraudio/main/mountnfs | sh
 >
 -----------------
-## #4 Eqfa12 LMS 
+### #4 Eqfa12 LMS 
 https://github.com/lovehifi/eqfa12
 >
 > wget -O - https://raw.githubusercontent.com/lovehifi/addraudio/main/eqfa12lms | sh
 >
 -----------------
-## #5 Config GUI LMS
+### #5 Config GUI LMS
 
 > wget -O - https://raw.githubusercontent.com/lovehifi/addraudio/main/configgui | sh
 >
@@ -47,7 +47,7 @@ Next, from the LMS - Config menu, you can easily switch between I2S DAC and USB 
 ![Screenshot](config_gui.png)
 >
 -----------------
-## #6 Plugin LMS
+### #6 Plugin LMS
 Some plugins in the LMS are not too necessary; you can deactivate them to make your system run smoother. Additionally, there are plugins that can conversion of your audio files, such as SqueezeDSP. I advise you not to activate it unless necessary.
 
 Here are the plugins that I have activated:
@@ -67,5 +67,16 @@ Here are the plugins that I have activated:
 - Qobuz
 - YouTube
 ---------------------
-## #7 Set up your music library in LMS.
+### #7 Set up your music library in LMS.
 ![Screenshot](add-music.png)
+
+-----------------------
+## [Build LMS-rAudio for Pi 2, Pi 3 and Pi 4](https://github.com/lovehifi/build-lms-sq-raudio)
+>
+How to create a perfect and feature-rich Music Server-Player with a user-friendly, easy-to-use, and visually appealing interface, coupled with outstanding sound quality on your Raspberry Pi? Choose rAudio on the Arch Linux platform to turn this into a reality. (Pi 2, Pi 3, and Pi 4).
+>
+https://github.com/lovehifi/build-lms-sq-raudio
+>
+----------------
+## Why rAudio‐LMS?
+https://github.com/lovehifi/raudiolms-32bit/wiki/Why-rAudio%E2%80%90LMS%3F
