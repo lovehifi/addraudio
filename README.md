@@ -30,11 +30,13 @@ In LMS, click the Interface menu, scroll to Home screen items, click the Setting
 >
 -----------------
 ### #4 Eqfa12 LMS 
-https://github.com/lovehifi/eqfa12
+>
 >
 > wget -O - https://raw.githubusercontent.com/lovehifi/addraudio/main/eqfa12lms | sh
 >
 ![Screenshot](Eqfa12LMS.png)
+>
+https://github.com/lovehifi/eqfa12
 >
 -----------------
 ### #5 Config GUI LMS
