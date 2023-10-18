@@ -53,3 +53,6 @@ Here are the plugins that I have activated:
 - Tidal
 - Qobuz
 - YouTube
+---------------------
+## #7 Scan the music library in the LMS
+![Screenshot](add-music.jpg)
