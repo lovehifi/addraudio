@@ -7,10 +7,12 @@
 --------
 >
 #### Listen to music from your NAS (or PC) with LMS on rAudio.
-![Screenshot](004.jpg)
 >
 In LMS, click the Interface menu, scroll to Home screen items, click the Settings icon, click Disks and Folders.
 >
+![Screenshot](004.jpg)
+>
+
 ![Screenshot](005.jpg)
 >
 -------
