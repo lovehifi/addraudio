@@ -34,3 +34,9 @@
 > wget -O - https://raw.githubusercontent.com/lovehifi/addraudio/main/configgui | sh
 >
 -----------------
+## #6 Plugin LMS
+Some plugins in the LMS are not too necessary; you can deactivate them to make your system run smoother.
+
+Additionally, there are plugins that can conversion of your audio files, such as SqueezeDSP. I advise you not to activate it unless necessary.
+
+Here are the plugins that I have activated as a sample:
