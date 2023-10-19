@@ -1,5 +1,6 @@
 #!/bin/bash
 echo 'http ALL=(ALL) NOPASSWD: ALL' | sudo tee -a /etc/sudoers
+usermod -a -G audio http
 
 if [ -d "/opt/logitechmediaserver-git/cache/InstalledPlugins/Plugins/MaterialSkin" ]; then
 cd /tmp
@@ -11,9 +12,8 @@ tar -xzvf configgui2.tar.gz --overwrite -C /
 tar -xzvf actionmenu.tar.gz --overwrite -C /
 chown http:http -Rv /srv/http/config
 chown http:http -Rv /opt/logitechmediaserver-git/prefs/material-skin
-usermod -a -G audio http
-echo "Install Finished, please reboot"
 
+echo "Install Finished, please reboot"
 hostname=$(hostname)
 replacement="http://${hostname}"
 if [ -f "/srv/http/assets/js/main.js" ]; then
