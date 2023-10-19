@@ -25,5 +25,5 @@ fi
 echo "Install Finished, please reboot"
 
 else
-    echo "Please install Material Skin before installing this CSS Mod"
+    echo "Please install Material Skin before installing this script"
 fi
