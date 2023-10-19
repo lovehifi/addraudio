@@ -13,15 +13,16 @@ tar -xzvf actionmenu.tar.gz --overwrite -C /
 chown http:http -Rv /srv/http/config
 chown http:http -Rv /opt/logitechmediaserver-git/prefs/material-skin
 
-echo "Install Finished, please reboot"
+
 hostname=$(hostname)
 replacement="http://${hostname}"
 if [ -f "/srv/http/assets/js/main.js" ]; then
 sed -i "s|https://github.com/rern/rAudio/discussions|${replacement}:9000|g" /srv/http/assets/js/main.js
 echo "Completed."
 else
-echo "File not found. Skipping..."
+echo "Skipping..."
 fi
+echo "Install Finished, please reboot"
 
 else
     echo "Please install Material Skin before installing this CSS Mod"
