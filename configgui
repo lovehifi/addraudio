@@ -11,7 +11,7 @@ wget https://raw.githubusercontent.com/lovehifi/addraudio/main/actionmenu.tar.gz
 tar -xzvf configgui2.tar.gz --overwrite -C /
 tar -xzvf actionmenu.tar.gz --overwrite -C /
 chown http:http -Rv /srv/http/config
-chown http:http -Rv /opt/logitechmediaserver-git/prefs/material-skin
+chown logitechms:logitechms -Rv /opt/logitechmediaserver-git/prefs/material-skin
 chown http:http /etc/asound.conf
 
 hostname=$(hostname)
