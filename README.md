@@ -74,7 +74,12 @@ Here are the plugins that I have activated:
 ### #7 Set up your music library in LMS.
 ![Screenshot](add-music.png)
 
+-----------
+## App Control
+![Screenshot](App_RuneAudio.jpg)
+>
 -----------------------
+>
 ## Build LMS-rAudio for Pi 2, Pi 3 and Pi 4
 >
 How to create a perfect and feature-rich Music Server-Player with a user-friendly, easy-to-use, and visually appealing interface, coupled with outstanding sound quality on your Raspberry Pi? Choose rAudio on the Arch Linux platform to turn this into a reality. (Pi 2, Pi 3, and Pi 4).
