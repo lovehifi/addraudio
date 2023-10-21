@@ -75,7 +75,7 @@ Here are the plugins that I have activated:
 ![Screenshot](add-music.png)
 
 -----------
-## App Control
+## App Control LMSrAudio
 ![Screenshot](App_RuneAudio.jpg)
 >
 -----------------------
