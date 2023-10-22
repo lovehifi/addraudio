@@ -75,11 +75,34 @@ Here are the plugins that I have activated:
 ![Screenshot](add-music.png)
 
 -----------
-## App Control for LMSrAudio
+### #8 App Control for LMSrAudio
 ![Screenshot](App_RuneAudio.jpg)
 >
 -----------------------
->
+### #9 Fixing NTFS Error to Mount USB HDD on rAudio
+
+At times, you might encounter a situation where you want to mount your USB HDD device on rAudio, but it doesn't seem to work, and your USB device is not found in /mnt/MPD/USB/. Here's how you can potentially fix the NTFS error and make the USB HDD mount successfully.
+
+First, open the Putty SSH terminal and run the following command to install the ntfs-3g package:
+```bash
+pacman -S ntfs-3g
+
+Use the fdisk -l command to view the list of USB devices. For example, if your USB HDD device is labeled as /dev/sdb1, you can follow these steps:
+
+To ensure that the device is not currently mounted, execute the command:
+```bash
+udevil umount /dev/sdb1
+
+Run the ntfsfix command to attempt to fix errors on the USB device:
+```bash
+ntfsfix /dev/sdb1
+
+Finally, use the udevil command to remount the device with the NTFS option:
+```bash
+udevil mount -t ntfs /dev/sdb1
+
+----------------------
+
 ## Build LMS-rAudio for Pi 2, Pi 3 and Pi 4
 >
 How to create a perfect and feature-rich Music Server-Player with a user-friendly, easy-to-use, and visually appealing interface, coupled with outstanding sound quality on your Raspberry Pi? Choose rAudio on the Arch Linux platform to turn this into a reality. (Pi 2, Pi 3, and Pi 4).
