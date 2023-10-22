@@ -100,7 +100,9 @@ ntfsfix /dev/sdb1
 Finally, use the udevil command to remount the device with the NTFS option:
 ```bash
 udevil mount -t ntfs /dev/sdb1
-\```
+```
+
+>
 ----------------------
 
 ## Build LMS-rAudio for Pi 2, Pi 3 and Pi 4
