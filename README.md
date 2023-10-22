@@ -109,6 +109,9 @@ udevil mount -t ntfs /dev/sdb1
 >
 I did this to successfully mount my NTFS HDD.
 >
+
+![Screenshot](NTFS-fix.png)
+>
 ----------------------
 
 ## Build LMS-rAudio for Pi 2, Pi 3 and Pi 4
