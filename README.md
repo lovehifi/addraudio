@@ -101,7 +101,8 @@ Finally, use the udevil command to remount the device with the NTFS option:
 ```bash
 udevil mount -t ntfs /dev/sdb1
 ```
-
+>
+I did this to successfully mount my NTFS HDD.
 >
 ----------------------
 
