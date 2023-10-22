@@ -86,21 +86,21 @@ At times, you might encounter a situation where you want to mount your USB HDD d
 First, open the Putty SSH terminal and run the following command to install the ntfs-3g package:
 ```bash
 pacman -S ntfs-3g
-
+```
 Use the fdisk -l command to view the list of USB devices. For example, if your USB HDD device is labeled as /dev/sdb1, you can follow these steps:
 
 To ensure that the device is not currently mounted, execute the command:
 ```bash
 udevil umount /dev/sdb1
-
+```
 Run the ntfsfix command to attempt to fix errors on the USB device:
 ```bash
 ntfsfix /dev/sdb1
-
+```
 Finally, use the udevil command to remount the device with the NTFS option:
 ```bash
 udevil mount -t ntfs /dev/sdb1
-
+```
 ----------------------
 
 ## Build LMS-rAudio for Pi 2, Pi 3 and Pi 4
