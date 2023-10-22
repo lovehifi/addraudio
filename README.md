@@ -87,7 +87,12 @@ First, open the Putty SSH terminal and run the following command to install the 
 ```bash
 pacman -S ntfs-3g
 ```
-Use the fdisk -l command to view the list of USB devices. For example, if your USB HDD device is labeled as /dev/sdb1, you can follow these steps:
+Use the
+```bash
+ fdisk -l 
+```
+>
+command to view the list of USB devices. For example, if your USB HDD device is labeled as /dev/sdb1, you can follow these steps:
 
 To ensure that the device is not currently mounted, execute the command:
 ```bash
