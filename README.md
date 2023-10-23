@@ -81,6 +81,8 @@ Here are the plugins that I have activated:
 ----------
 ### #9 Play on USB HDD
 >
+Initial configuration to listen to music from USB (only needs to be done once). Next time, click on 'Disk and Folder' on the homepage to access USB/NAS.
+>
 ![Screenshot](playonusb2.png)
 >
 
