@@ -78,8 +78,14 @@ Here are the plugins that I have activated:
 ### #8 App Control for LMSrAudio
 ![Screenshot](App_RuneAudio.jpg)
 >
+----------
+### #9 Play on USB HDD
+>
+![Screenshot](playonusb2.png)
+>
+
 -----------------------
-### #9 Fixing NTFS Error to Mount USB HDD on rAudio
+### #10 Fixing NTFS Error to Mount USB HDD on rAudio
 
 At times, you might encounter a situation where you want to mount your USB HDD device on rAudio, but it doesn't seem to work, and your USB device is not found in /mnt/MPD/USB/. Here's how you can potentially fix the NTFS error and make the USB HDD mount successfully.
 
