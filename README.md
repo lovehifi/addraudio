@@ -121,7 +121,7 @@ I did this to successfully mount my NTFS HDD.
 ![Screenshot](NTFS-fix.png)
 >
 ----------------------
-### Listening to music from the YouTube.com website through a DAC
+### #11 Listening to music from the YouTube.com website through a DAC
 Instructions for listening to music from the YouTube.com website through a DAC and using the Raspberry Pi's Touch LCD screen to control YouTube playback on rAudio:
 
 **Configure the Touch LCD**
