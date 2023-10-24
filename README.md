@@ -135,7 +135,7 @@ echo 'MOZ_USE_XINPUT2 DEFAULT=1' | sudo tee -a /etc/security/pam_env.conf
 
 **Add the YouTube.com Website**
 >
-Log in to SSH and enter the following command to replace "http://localhost" with "http://youtube.com" in the configuration file:
+Enter the following command to replace "http://localhost" with "http://youtube.com" in the configuration file:
 ```bash
 sudo sed -i 's#http://localhost#http://youtube.com#g' /srv/http/bash/xinitrc
 ```
