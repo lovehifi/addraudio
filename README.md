@@ -122,9 +122,11 @@ I did this to successfully mount my NTFS HDD.
 >
 ----------------------
 ### #11 Listening to music from the YouTube.com website through a DAC
+>
 Instructions for listening to music from the YouTube.com website through a DAC and using the Raspberry Pi's Touch LCD screen to control YouTube playback on rAudio:
 
 **Configure the Touch LCD**
+>
 Log in to SSH and enter the following command:
 >
 ```bash
@@ -138,6 +140,7 @@ Log in to SSH and enter the following command to replace "http://localhost" with
 sudo sed -i 's#http://localhost#http://youtube.com#g' /srv/http/bash/xinitrc
 ```
 **Navigate to the rAudio menu -> Features**
+>
 Enable "Browser on RPi."
 
 To enhance your experience, you can also explore how to install ad-blocking extensions and a virtual keyboard extension. These two aspects have not been explored yet.
