@@ -121,7 +121,31 @@ I did this to successfully mount my NTFS HDD.
 ![Screenshot](NTFS-fix.png)
 >
 ----------------------
+### Listening to music from the YouTube.com website through a DAC
+Instructions for listening to music from the YouTube.com website through a DAC and using the Raspberry Pi's Touch LCD screen to control YouTube playback on rAudio:
 
+**Configure the Touch LCD**
+Log in to SSH and enter the following command:
+>
+```bash
+echo 'MOZ_USE_XINPUT2 DEFAULT=1' | sudo tee -a /etc/security/pam_env.conf
+```
+
+**Add the YouTube.com Website**
+>
+Log in to SSH and enter the following command to replace "http://localhost" with "http://youtube.com" in the configuration file:
+```bash
+sudo sed -i 's#http://localhost#http://youtube.com#g' /srv/http/bash/xinitrc
+```
+**Navigate to the rAudio menu -> Features**
+Enable "Browser on RPi."
+
+To enhance your experience, you can also explore how to install ad-blocking extensions and a virtual keyboard extension. These two aspects have not been explored yet.
+If you connect HDMI from the Pi to your TV, you can simultaneously watch and listen directly through the DAC. It's straightforward and doesn't require any YouTube API integration.
+
+The control is intuitive. This setup has been tested and works well.
+
+-------------
 ## Build LMS-rAudio for Pi 2, Pi 3 and Pi 4
 >
 How to create a perfect and feature-rich Music Server-Player with a user-friendly, easy-to-use, and visually appealing interface, coupled with outstanding sound quality on your Raspberry Pi? Choose rAudio on the Arch Linux platform to turn this into a reality. (Pi 2, Pi 3, and Pi 4).
