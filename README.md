@@ -148,6 +148,16 @@ If you connect HDMI from the Pi to your TV, you can simultaneously watch and lis
 
 The control is intuitive. This setup has been tested and works well.
 
+**You need to turn off the player before playing YouTube.
+>
+------------
+### #12 Listening to YouTube with LMS
+**To use YouTube with LMS, you need to create and add the YouTube API to the LMS configuration. Here are the basic steps to accomplish this:**
+>
+https://www.youtube.com/watch?v=iqcIjP8Cel8
+>
+https://www.youtube.com/watch?v=0ZWaaKjxjzo
+>
 -------------
 ## Build LMS-rAudio for Pi 2, Pi 3 and Pi 4
 >
