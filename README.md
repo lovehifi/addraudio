@@ -148,7 +148,7 @@ If you connect HDMI from the Pi to your TV, you can simultaneously watch and lis
 
 The control is intuitive. This setup has been tested and works well.
 
-**You need to turn off the player before playing YouTube.
+**You need to turn off the player before playing YouTube or [Tidal Connect](https://github.com/lovehifi/tidal-raudio-pi4).
 >
 ------------
 ### #12 Listening to YouTube with LMS
