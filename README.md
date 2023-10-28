@@ -177,11 +177,13 @@ https://www.youtube.com/watch?v=0ZWaaKjxjzo
 >
 Set SQ64-rAudio (Squeezelite) status to Off and enable Tidal Connect automatically.
 >
-![Screenshot](tidal-connect.jpg)
 >
 ```bash
 
 ```
+>
+![Screenshot](tidal-connect.jpg)
+
 >
 -------------
 ## Build LMS-rAudio for Pi 2, Pi 3 and Pi 4
