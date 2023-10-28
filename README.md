@@ -15,7 +15,7 @@
 >
 ![Screenshot](add-nas-04.jpg)
 >
-**Use the newly created account to share music folders from your computer. For rAudio, also use that account to add the folders you shared from your computer into rAudio. Next, you can use LMS to access the NAS directory to listen to the music on your computer.**
+**Use the newly created account to share music folders from your computer. For rAudio, also use that account Windows 10 to add the folders you shared from your computer into rAudio. Next, you can use LMS to access the NAS directory to listen to the music on your computer.**
 >
 --------
 >
