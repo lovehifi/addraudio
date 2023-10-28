@@ -4,6 +4,19 @@
 ![Screenshot](002a.jpg)
 ![Screenshot](003.jpg)
 >
+----------------
+#### How to add a music folder from your Windows 10 computer to rAudio?
+> 
+![Screenshot](add-nas-01.jpg)
+>
+![Screenshot](add-nas-02.jpg)
+>
+![Screenshot](add-nas-03.jpg)>
+>
+![Screenshot](add-nas-04.jpg)
+>
+Use the newly created account to share music folders from your computer. For rAudio, also use that account to add the folders you shared from your computer into rAudio. Next, you can use LMS to access the NAS directory to listen to the music on your computer.
+>
 --------
 >
 #### Listen to music from your NAS (or PC) with LMS on rAudio.
