@@ -21,7 +21,6 @@
 >
 #### Listen to music from your NAS (or PC) with LMS on rAudio.
 >
-Set SQ64-rAudio (Squeezelite) status to Off and enable Tidal Connect automatically.
 >
 In LMS, click the Interface menu, scroll to Home screen items, click the Settings icon, click Disks and Folders.
 >
@@ -176,6 +175,7 @@ https://www.youtube.com/watch?v=0ZWaaKjxjzo
 -------------
 ### #13 Tidal Connect
 >
+Set SQ64-rAudio (Squeezelite) status to Off and enable Tidal Connect automatically.
 ![Screenshot](tidal-connect.jpg)
 >
 ```bash
