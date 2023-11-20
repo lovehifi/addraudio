@@ -197,7 +197,7 @@ https://github.com/lovehifi/build-lms-sq-raudio
 ## USB Wifi for rAudio Pi 4
 >
 ![Screenshot](TP-Link%20TL-WN822N.png)
-
+![Screenshot](rAudio-Wifi.png)
 >
 ----------------
 ## Why rAudio‐LMS?
