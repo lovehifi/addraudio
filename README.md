@@ -192,6 +192,13 @@ How to create a perfect and feature-rich Music Server-Player with a user-friendl
 >
 https://github.com/lovehifi/build-lms-sq-raudio
 >
+------------
+>
+## Wifi work with rAudio Pi 4
+>
+![Screenshot](TP-Link%20TL-WN822N.png)
+
+>
 ----------------
 ## Why rAudio‐LMS?
 https://github.com/lovehifi/raudiolms-32bit/wiki/Why-rAudio%E2%80%90LMS%3F
