@@ -196,6 +196,8 @@ https://github.com/lovehifi/build-lms-sq-raudio
 >
 ## USB Wifi for rAudio Pi 4
 >
+Comfast CF-951AX (mt7921au chipset)
+>
 ![Screenshot](cf_wifi_6.jpg)
 >
 TP-Link TL-WN822N(EU)
