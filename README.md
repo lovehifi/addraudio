@@ -201,6 +201,13 @@ TP-Link TL-WN822N(EU)
 ![Screenshot](TP-Link%20TL-WN822N.png)
 ![Screenshot](rAudio-Wifi.png)
 >
+--------------
+>
+### Set a Static IP Address
+>
+![Screenshot](static_ip.png)
+>
+>
 ----------------
 ## Why rAudio‐LMS?
 https://github.com/lovehifi/raudiolms-32bit/wiki/Why-rAudio%E2%80%90LMS%3F
