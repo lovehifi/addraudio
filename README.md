@@ -196,6 +196,8 @@ https://github.com/lovehifi/build-lms-sq-raudio
 >
 ## USB Wifi for rAudio Pi 4
 >
+![Screenshot](cf_wifi_6.jpg)
+>
 TP-Link TL-WN822N(EU)
 >
 ![Screenshot](TP-Link%20TL-WN822N.png)
